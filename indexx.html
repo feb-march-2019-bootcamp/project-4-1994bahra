@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  <style>
+* {
+  background-color:#f2e6ff;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+
+h1 {
+  margin:-10px;
+  text-align:center;
+  border: 10px;
+  background:#b366ff;
+  padding: 0px 0 5px;
+  width:1370px;
+  height: 100px;
+  display: block;
+    font-size: 2em;
+    font-weight: bold;
+ 
+}
+
+h2 {
+  font-size:20px;
+  text-align:center;
+  padding: 0 0 10px;
+  background:#c999ff;
+    
+}
+
+.newcontainer {
+  
+  text-align: center;
+  width: 1310px;
+  height: 60px;
+  padding:10px 15px;
+  border-radius:15px;
+  margin:15px 0;
+}
+
+#box {
+  padding:10px 15px;
+  border-radius:15px;
+  background:#c999ff;
+  margin:15px 0;
+}
+#newtask{
+  width:30%;
+  height: 60%;
+  background:#b366ff;
+  border-radius: 10px;
+  border: 3px ;
+  font-size: 20px;
+  font-display: bold;
+  padding:10px 15px;
+  border-radius:15px;
+  margin:15px 0;
+  color:whitesmoke;
+  
+
+}
+label{
+  font-size: 20px;
+   border-radius:3px; 
+  margin:15px 0;
+  font-weight: bold;
+  } 
+  #addtask{
+    
+  width:8%;
+  height: 70%;
+  background:#b366ff;
+ 
+  border: 1px;
+  font-size: 20px;
+  padding:10px 15px;
+  border-radius:15px;
+  margin:15px 0;
+
+  }
+
+.incomplete {
+  float:center ;
+  width:30%;
+  height: 60%;
+  
+}
+
+.completelist {
+  float:center;
+  width:30%;
+  height: 60%;
+}
+
+ul {
+  list-style:none;
+  padding:0;
+  margin:0;
+  box-align: center;
+  background: #bb80ff;
+}
+
+li{
+  background:#cc99ff;
+}
+
+.deleteBT {
+  float:right ;
+  width: 100px;
+  height: 20px;
+  border-radius: 20px;
+  background:#bb80ff;
+  font-weight: bold;
+  border:black; 
+}
+.img{
+  max-width: 35%;
+  height: auto; 
+  border-radius:5px;
+}
+  marquee{
+    background: #b366ff;
+  }
+    
+    
+    </style>
+</head>
+<body>
+    
+        <div >
+  
+                <h1>   <br><marquee WIDTH="28%" >My First To-Do App</marquee></h1>
+                
+                <div class="newcontainer " >
+                
+                <label  >Add New Task</label>
+                <input type="text" id="newtask">
+                  <button id="addtask"><img src="add.png" class='img'></button>
+                
+                </div>
+                
+                <div class="incomplete " id='box'>
+                
+                  <h2>Incomplete Tasks</h2>
+                  <ul>
+                    
+                  </ul>
+                
+                </div>
+                
+                <div class="completelist " id='box'>
+                  
+                  <h2>Completed Tasks</h2>
+                  <ul>
+                    <li>Task Name <button class="deleteBT">Delete</button></li>
+              
+                  </ul>
+                  
+                </div>
+                
+                
+                
+                
+                
+        </div><!--/container-->
+
+
+
+
+
+
+    <script src='file2.js'></script>
+</body>
+</html>
